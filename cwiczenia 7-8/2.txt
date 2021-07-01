@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvjeQz14HEUpkzGNl+NMVdIsvCwA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23004>; rel="up"
+Last-Modified: Thu, 01 Jul 2021 18:52:44 GMT
+ETag: "6lJ2gT4qKvulhAT4U90SS5"
+Date: Thu, 01 Jul 2021 18:54:00 GMT
+Content-Type: application/json
+Content-Length: 66
+
+{"name": "Amarena", "quality": 0, "isWhite": false, "year:": 2021}

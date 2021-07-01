@@ -1,0 +1,33 @@
+1.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Malbec", "quality": 8, "isWhite": false, "year:": 2019}' http://localhost:8098/buckets/s23004/keys/malbec
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Cava", "quality": 7, "isWhite": true, "year:": 2020}' http://localhost:8098/buckets/s23004/keys/cava
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Primitivo", "quality": 5, "isWhite": false", "year:": 2017}' http://localhost:8098/buckets/s23004/keys/primitivo
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Amarena", "quality": 0, "isWhite": false, "year:": 2021}' http://localhost:8098/buckets/s23004/keys/amarena
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Barolo", "quality": 10, "isWhite": false, "year:": 2000}' http://localhost:8098/buckets/s23004/keys/barolo
+
+2.
+curl -i -XGET  http://localhost:8098/buckets/s23004/keys/amarena
+
+3.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Amarena", "quality": 0, "isWhite": false, "year:": 2021, "isWine": false}' http://localhost:8098/buckets/s23004/keys/amarena 
+
+4.
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Amarena", "isWhite": false, "year:": 2021}' http://localhost:8098/buckets/s23004/keys/amarena 
+
+5. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"name": "Amarena", "quality": 100, "isWhite": false, "year:": 2021}' http://localhost:8098/buckets/s23004/keys/amarena 
+
+6.
+curl -i -XDELETE http://localhost:8098/buckets/s23004/keys/primitivo
+
+7.
+curl -i -XGET http://localhost:8098/buckets/s23004/keys/sancerre 
+
+8.
+curl -i -XPOST -H "Content-Type: application/json" -d '{"name": "Savoinougn Blanc"}' http://localhost:8098/buckets/s23004/keys
+
+9.
+curl -i -XGET  http://localhost:8098/buckets/s23004/keys/KqSoMT6xVtcwnmDrO6RZPVhzEKY 
+
+10.
+curl -i -XDELETE http://localhost:8098/buckets/s23004/keys/KqSoMT6xVtcwnmDrO6RZPVhzEKY 
